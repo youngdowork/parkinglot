@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="refresh" content="2">
+</head>
+<body>
+    <h1 style="text-align: center">스마트 주차장</h1>
+     <table               
+            border="1"
+            width="1000px"
+            height="300px"
+            align="center"
+            style ="table-layout:fixed"
+            >
+            <thead>
+                <tr align="center" bgcolor="white" height="40">
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr align="center" bgcolor="white">
+
+                    <td><img src="{{ url_for('static', filename=image_file1)}}" width = 100%></td>
+
+                    <td><img src="{{ url_for('static', filename=image_file2) }}" width = 100%></td>
+
+                    <td><img src="{{ url_for('static', filename=image_file3) }}" width = 100%></td>
+
+
+
+                </tr>
+            </tbody>
+        </table>
+    <p style="text-align: center; font-size: 20px">남은 자리 수 : {{d_var}}</p>
+
+</body>
+</html>
